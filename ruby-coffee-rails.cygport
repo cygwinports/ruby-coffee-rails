@@ -1,0 +1,8 @@
+inherit rubygem
+
+NAME="ruby-coffee-rails"
+VERSION=3.2.2
+RELEASE=1
+CATEGORY="Ruby"
+SUMMARY="Ruby on Rails CoffeeScript adapter"
+DESCRIPTION="CoffeeScript adapter for the Rails asset pipeline."
