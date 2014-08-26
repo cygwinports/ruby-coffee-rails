@@ -1,8 +1,14 @@
 inherit rubygem
 
 NAME="ruby-coffee-rails"
-VERSION=3.2.2
+VERSION=4.0.1
 RELEASE=1
 CATEGORY="Ruby"
 SUMMARY="Ruby on Rails CoffeeScript adapter"
 DESCRIPTION="CoffeeScript adapter for the Rails asset pipeline."
+
+ARCH=noarch
+
+PKG_NAMES="${NAME} ${NAME}-doc"
+ruby_coffee_rails_CONTENTS="${RUBYGEM_INSTDIR#/} ${RUBYGEM_SPEC#/}"
+ruby_coffee_rails_doc_CONTENTS=${RUBYGEM_DOCDIR#/}
